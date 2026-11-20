@@ -1,0 +1,140 @@
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #E8D1A7;
+    font-family: monospace;
+    padding: 0.5%;
+}
+.menu li {
+    margin: 0.8rem;
+    align-content: end;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #442d1c;
+    background-color: #FDF8EC;
+}
+a.active {
+    background-color: #F5E2CE;
+    color: #442D1C;
+}
+.menu a:hover {
+    background-color: #E5A657;
+}
+a {
+    color: #C03A22;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #E8D1A7;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    margin: -0.25rem;
+    padding: 0.25rem;
+}
+footer ul {
+    list-style: none;
+}
+.footer_logo {
+    width: 11rem;
+    padding: 0.7rem;
+    align-self: flex-end;
+}
+.footer_right {
+    justify-content: space-between;
+}
+.img {
+    width: 18rem;
+}
+.parent_title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.child_title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 20rem; /* Блок будет сжиматься и растягиваться, но не станет уже 300px */
+    max-width: 40rem;
+    border: 2px solid #C03A22;
+    padding: 2rem;
+}
+.child_img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 20rem;
+    max-width: 24rem;
+}
+.parent_nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+}
+.child_nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 20rem; /* Блок будет сжиматься и растягиваться, но не станет уже 300px */
+    max-width: 40rem;
+}
+.up_down {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 20rem;
+    max-width: 2rem;
+}
+.parent_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.child_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 20rem; /* Блок будет сжиматься и растягиваться, но не станет уже 300px */
+    max-width: 40rem;
+}
+.parent_text h2 {
+    padding: 2.5rem;
+}
+.parent_table {
+    overflow-x: auto;
+}
+.table {
+    background-image: url(../img/catalogue_table_bg.jpg);
+    background-size: 100%;
+    border-collapse: collapse;
+    border: 1px solid #9D9167;
+}
+.table h2 {
+    text-align: center;
+}
+.table td, th {
+    border: 1px solid #9D9167;
+}
+.table img {
+    width: 90px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Элементы встают друг под друга */
+    padding: 10px;
+  }
+}
